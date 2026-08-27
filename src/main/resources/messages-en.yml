@@ -1,0 +1,42 @@
+# CityPost - Default messages (English)
+# All strings use the MiniMessage format (https://docs.advntr.dev/minimessage/format.html)
+gui:
+  backpack:
+    title: "<gold>Backpack"
+    send: "<green>Send"
+    send-lore: "<gray>Sends all items to the city"
+    cancel: "<red>Cancel"
+    cancel-lore: "<gray>Returns all items"
+  mail:
+    title: "<gold>CityMail"
+    prev: "<yellow>← Previous page"
+    next: "<yellow>Next page →"
+    refresh: "<aqua>Refresh"
+    refresh-lore: "<gray>Page %page%/%pages% · Click to refresh"
+    package-name: "<yellow>Package #%id%"
+    package-lore: "<gray>%stacks% stacks · from %world% · %age%"
+msg:
+  age:
+    now: "<gray>just now"
+    min: "<gray>%n% min ago"
+    h: "<gray>%n% h ago"
+    d: "<gray>%n% d ago"
+  send:
+    no-items: "<red>No items in the backpack!"
+    on-way: "<green>Package on its way… (ID #%id%)"
+    cooldown: "<red>Wait %seconds% s before sending the next package."
+    failed: "<red>Could not send the package (database error)."
+  mail:
+    claimed: "<green>Package #%id% claimed!"
+    inventory-full: "<yellow>Inventory full — %count% items were dropped."
+    claim-failed: "<red>Could not claim the package (database error)."
+    already-claimed: "<gray>This package was already claimed."
+    refreshed: "<green>Mailbox refreshed."
+  error:
+    console: "<red>Players only."
+    no-permission: "<red>You don't have permission to do that."
+  admin:
+    usage: "<yellow>Usage: /citypost selftest"
+    selftest-start: "<aqua>CityPost self-test running…"
+    selftest-item: "<gray>%result%"
+    selftest-db: "<gray>%result%"

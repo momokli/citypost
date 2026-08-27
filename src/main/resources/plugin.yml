@@ -1,0 +1,32 @@
+name: CityPost
+version: 1.0.0
+main: de.momokli.citypost.CityPostPlugin
+api-version: '1.26'
+description: One-way Item-Package-System (World 1/2 -> City)
+authors: [momokli]
+website: https://github.com/momokli/citypost
+
+commands:
+  citysend:
+    description: Öffnet den Backpack zum Versenden von Paketen in die City
+    usage: /citysend
+    permission: citypost.send
+  citymail:
+    description: Öffnet das Postfach mit angekommenen Paketen
+    usage: /citymail
+    permission: citypost.mail
+  citypost:
+    description: CityPost-Verwaltung (Selftest/Diagnose)
+    usage: /citypost selftest
+    permission: citypost.admin
+
+permissions:
+  citypost.send:
+    description: Erlaubt /citysend (Pakete senden)
+    default: true
+  citypost.mail:
+    description: Erlaubt /citymail (Pakete abholen)
+    default: true
+  citypost.admin:
+    description: Erlaubt /citypost selftest (Diagnose)
+    default: op

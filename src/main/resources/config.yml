@@ -1,0 +1,28 @@
+# CityPost - One-way Item-Package-System (World 1/2 -> City)
+#
+# mode: SEND    = World-Server (schreibt Pakete, /citysend)
+# mode: RECEIVE = City-Server (liest Pakete, /citymail)
+# Ein Rückkanal existiert nicht: nur SEND-Server schreiben Item-Daten.
+mode: SEND
+
+# Quelle, die im DB-Feld "world" gespeichert wird (z.B. world1, world2)
+server-tag: world1
+
+database:
+  host: localhost
+  port: 3306
+  name: citypost
+  user: citypost
+  password: "CHANGE_ME"
+  pool-size: 4
+
+# Größe des Sender-Backpacks (letzte Reihe = Buttons)
+backpack-size: 27
+# Verzögerung in Sekunden, bis das Paket nach dem Abschicken in der DB landet (Paket-Flair)
+delivery-delay: 0
+# Poll-Intervall in Sekunden, in dem der City-Server offene Pakete lädt (RECEIVE)
+poll-interval: 10
+# Anti-Spam: minimale Sekunden zwischen zwei Paketen pro Spieler
+cooldown-seconds: 30
+# Sprache der Standard-Messages: de | en (messages.yml wird beim ersten Start kopiert)
+language: de

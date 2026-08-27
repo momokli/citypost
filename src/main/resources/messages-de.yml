@@ -1,0 +1,43 @@
+# CityPost - Standard-Messages (Deutsch)
+# Alle Strings sind per MiniMessage-Format (https://docs.advntr.dev/minimessage/format.html)
+# Anpassungen hier landen direkt im Spiel; fehlende Keys fallen auf die gebündelten Defaults zurück.
+gui:
+  backpack:
+    title: "<gold>Backpack"
+    send: "<green>Abschicken"
+    send-lore: "<gray>Schickt alle Items in die City"
+    cancel: "<red>Abbrechen"
+    cancel-lore: "<gray>Gibt alle Items zurück"
+  mail:
+    title: "<gold>CityMail"
+    prev: "<yellow>← Vorherige Seite"
+    next: "<yellow>Nächste Seite →"
+    refresh: "<aqua>Aktualisieren"
+    refresh-lore: "<gray>Seite %page%/%pages% · Klick zum Aktualisieren"
+    package-name: "<yellow>Paket #%id%"
+    package-lore: "<gray>%stacks% Stacks · von %world% · %age%"
+msg:
+  age:
+    now: "<gray>gerade eben"
+    min: "<gray>vor %n% min"
+    h: "<gray>vor %n% h"
+    d: "<gray>vor %n% d"
+  send:
+    no-items: "<red>Keine Items im Backpack!"
+    on-way: "<green>Paket unterwegs… (ID #%id%)"
+    cooldown: "<red>Warte noch %seconds% s, bevor du das nächste Paket schicken kannst."
+    failed: "<red>Das Paket konnte nicht gesendet werden (Datenbankfehler)."
+  mail:
+    claimed: "<green>Paket #%id% abgeholt!"
+    inventory-full: "<yellow>Inventar voll — %count% Items wurden fallengelassen."
+    claim-failed: "<red>Das Paket konnte nicht abgeholt werden (Datenbankfehler)."
+    already-claimed: "<gray>Dieses Paket wurde bereits abgeholt."
+    refreshed: "<green>Postfach aktualisiert."
+  error:
+    console: "<red>Nur für Spieler."
+    no-permission: "<red>Dafür fehlt dir die Berechtigung."
+  admin:
+    usage: "<yellow>Verwendung: /citypost selftest"
+    selftest-start: "<aqua>CityPost-Selftest läuft…"
+    selftest-item: "<gray>%result%"
+    selftest-db: "<gray>%result%"
